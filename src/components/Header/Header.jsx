@@ -14,10 +14,10 @@ function Header() {
           </h2>
           <br />
           <p className="header-text fs-18 fw-3">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            consequatur. Porro perferendis atque accusamus mollitia autem
-            sapiente officia commodi. Eaque unde iusto libero neque sint minima
-            voluptas corporis, quibusdam praesentium?
+            "Bienvenido a To Be Read, tu espacio ideal para descubrir nuevos
+            libros. Explora nuestra extensa colección, encuentra tus lecturas
+            favoritas, y mantén un seguimiento de los libros que deseas leer.
+            ¡Empecemos tu próxima aventura literaria hoy mismo!"
           </p>
           <SearchForm />
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useGlobalContext } from "../../context";
 import Book from "../BookList/Book";
 import Loading from "../Loader/Loader";
@@ -21,6 +21,16 @@ function BookList() {
   });
 
   //console.log(booksWithCovers);
+
+  // Desplazarse al loader cuando loading es true
+  useEffect(() => {
+    if (loading) {
+      const loaderElement = document.getElementById("loader"); // Buscar el elemento con id "loader"
+      if (loaderElement) {
+        loaderElement.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+  }, [loading]); // Ejecutar este efecto solo cuando `loading` cambie
 
   if (loading) return <Loading />;
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import Loading from "../Loader/Loader";
 import coverImg from "../../images/no-cover-book.jpg";
@@ -14,7 +14,18 @@ const BookDetails = () => {
   const [book, setBook] = useState(null);
   const navigate = useNavigate();
 
+  // Crear un ref para la sección de detalles del libro
+  const detailsRef = useRef(null);
+
   useEffect(() => {
+    if (detailsRef.current) {
+      detailsRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "center", // Centra la sección en la ventana
+        inline: "center", // También alinea horizontalmente
+      });
+    }
+
     setLoading(true);
     async function getBookDetails() {
       try {
@@ -62,7 +73,7 @@ const BookDetails = () => {
   console.log(book);
 
   return (
-    <section className="book-details">
+    <section className="book-details" ref={detailsRef}>
       <div className="container">
         <button
           type="button"

@@ -1,5 +1,10 @@
 .loader{
-    padding: 4rem 0;
+    height: 100vh;
+    /* padding: 10rem 0; */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .loader img{
     width: 120px;

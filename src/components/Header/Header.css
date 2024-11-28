@@ -1,6 +1,6 @@
 .header-content{
-    margin-top: 120px;
-    min-height: 84vh;
+    /* margin-top: 120px; */
+    min-height: 100vh;
     background: linear-gradient(rgba(255, 197, 112, 0.8), rgba(107, 64, 0, 0.8)), url("../../images/Librosprin.jpg") center/cover no-repeat;
     flex-direction: column;
 }
@@ -10,6 +10,6 @@
 .header-text{
     margin-top: -1.8rem;
     margin-bottom: 2.8rem;
-    opacity: 0.8;
+    opacity: 0.9;
     max-width: 770px;
 }

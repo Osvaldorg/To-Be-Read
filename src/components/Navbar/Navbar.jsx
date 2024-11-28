@@ -12,7 +12,7 @@ function Navbar() {
     <nav className="navbar" id="navbar">
       <div className="container navbar-content flex">
         <div className="brand-and-toggler flex flex-sb">
-          <Link to="/" className="navbar-brand flex">
+          <Link to="book" className="navbar-brand flex">
             <img src={logo} alt="site logo" />
             <span className="text-uppercase fw-7 fs-24 ls-1">
               To&nbsp;Be&nbsp;Read
