@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 function Footer() {
   return (
@@ -46,7 +47,7 @@ function Footer() {
             </a>
             <a href="#" target="_blank">
               <span className="instagram">
-                <FaInstagramSquare />
+                <AiFillInstagram />
               </span>
             </a>
           </div>

@@ -1,5 +1,5 @@
 .footer {
-    background-color: #000;
+    background-color: #9E6F21;
     color: #fff;
     padding: 2rem 0;
   }
@@ -44,10 +44,10 @@
   }
   
   .facebook{
-    color: #3B5998;
+    color: #fff;
   }
   .twitter{
-    color: #08a0e9;
+    color: #fff;
   }
 
   .footer-social .social-icons a {
@@ -70,7 +70,7 @@
     text-align: center;
     padding-top: 1rem;
     font-size: 0.8rem;
-    border-top: 1px solid #444;
+    border-top: 1px solid #3F2305;
   }
   
   .footer-bottom p {
