@@ -1,32 +1,103 @@
-.about{
-    padding: 3rem 0;
-}
-
-.about-content{
+.about {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section-title h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .about-content {
+    display: grid;
     gap: 4rem;
-}
-
-.about-title{
-    margin: 1rem 0;
-}
-
-.about-img img{
-    max-width: 520px;
-}
-
-.about-text p{
-    margin: 1.8rem 0;
-    opacity: 0.8;
-}
-
-@media screen and (min-width: 800px){
-    .about-content{
-        grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4rem;
+  }
+  
+  .about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title, .section-subtitle {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .about-text p, .mission-section p, .values-section p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .mission-section, .values-section, .team-section {
+    margin-bottom: 4rem;
+  }
+  
+  .values-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .values-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .values-list li::before {
+    content: "•";
+    color: #007bff;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+  }
+  
+  .team-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .team-member {
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Alineamos elementos en una columna */
+    align-items: center; /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
+    text-align: center; /* Aseguramos que el texto también esté centrado */
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .team-member h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .team-member p {
+    color: #666;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .about-content {
+      grid-template-columns: repeat(2, 1fr);
     }
-    .about-title{
-        margin-top: 0;
-    }
-    .about-img{
-        margin-left: 0;
-    }
-}
+  }
