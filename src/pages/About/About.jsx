@@ -37,10 +37,29 @@ function About() {
         <div className="mission-section">
           <h3 className="section-subtitle">Nuestra Misión</h3>
           <p>
-            Nuestra misión es [descripción de tu misión]. Nos esforzamos por
-            [objetivos principales], mientras mantenemos [valores importantes]
-            en el centro de todo lo que hacemos.
+            En To Be Read, nuestra misión es crear un espacio donde los amantes
+            de los libros puedan descubrir, compartir y enamorarse de nuevas
+            historias. Queremos:
           </p>
+          <ul className="values-list">
+            <li>
+              Inspirar la lectura: Ofrecer recomendaciones personalizadas que
+              conecten a cada lector con su próxima gran aventura literaria.
+            </li>
+            <li>
+              Construir comunidad: Ser un lugar donde lectores de todo el mundo
+              puedan intercambiar ideas, reseñas y pasiones.
+            </li>
+            <li>
+              Fomentar el conocimiento: Ampliar horizontes al presentar obras de
+              autores consagrados y voces emergentes.
+            </li>
+            <li>
+              Hacerlo accesible: Simplificar el acceso a los libros mediante
+              herramientas innovadoras, desde rankings hasta bibliotecas
+              personales virtuales.
+            </li>
+          </ul>
         </div>
 
         <div className="values-section">

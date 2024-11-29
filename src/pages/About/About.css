@@ -58,7 +58,7 @@
   
   .values-list li::before {
     content: "•";
-    color: #007bff;
+    color: #603F26;
     font-size: 1.5rem;
     position: absolute;
     left: 0;
