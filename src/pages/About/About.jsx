@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import aboutImg from "../../images/about-Img.jpg";
+import aboutImg from "../../images/about-img.jpg";
 import { FaBookOpen, FaHeart, FaGlobe, FaLightbulb } from "react-icons/fa";
 
 function About() {
