@@ -1,63 +1,55 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import tbrWhiteLogo from "../../images/tbr-white.png";
 
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="container footer-container grid">
         <div className="footer-about">
-          <h3>Sobre Nosotros</h3>
+          <div className="footer-brand flex">
+            <img src={tbrWhiteLogo} alt="To Be Read Logo" className="footer-brand-logo" />
+          </div>
           <p>
-            Exploramos y compartimos los mejores libros para tu próxima lectura.
-            Inspírate y encuentra tus próximos favoritos. lorem
+            Explora millones de obras literarias y guarda tus próximas lecturas favoritas. Impulsado con datos abiertos de Open Library.
           </p>
         </div>
+
         <div className="footer-links">
-          <h3>Enlaces Rápidos</h3>
+          <h4>Navegación</h4>
           <ul>
             <li>
-              <a href="#home">Inicio</a>
+              <Link to="/">Inicio</Link>
             </li>
             <li>
-              <a href="#about">Nosotros</a>
+              <Link to="/tbr">Mi Lista TBR</Link>
             </li>
             <li>
-              <a href="#contact">Contacto</a>
-            </li>
-            <li>
-              <a href="#privacy">Política de Privacidad</a>
+              <Link to="/about">Sobre Nosotros</Link>
             </li>
           </ul>
         </div>
-        <div className="footer-social">
-          <h3>Síguenos</h3>
-          <div className="social-icons">
-            <a href="#" target="_blank">
-              <span className="facebook">
-                <FaFacebook />
-              </span>
-            </a>
-            <a href="#" target="_blank">
-              <span className="twitter">
-                <FaTwitter />
-              </span>
-            </a>
-            <a href="#" target="_blank">
-              <span className="instagram">
-                <AiFillInstagram />
-              </span>
-            </a>
-          </div>
+
+        <div className="footer-info">
+          <h4>Tecnologías</h4>
+          <ul>
+            <li>React 18 + Vite</li>
+            <li>React Router v6</li>
+            <li>Open Library REST API</li>
+            <li>LocalStorage Web Storage</li>
+          </ul>
         </div>
       </div>
-      <div className="footer-bottom">
-        <p>&copy; 2024 To Be Read. Todos los derechos reservados.</p>
+
+      <div className="footer-bottom text-center">
+        <div className="container">
+          <p>&copy; {new Date().getFullYear()} To Be Read. Creado para amantes de la lectura.</p>
+        </div>
       </div>
     </footer>
   );
 }
 
 export default Footer;
+

@@ -1,0 +1,54 @@
+.tbr-page {
+  padding: 5rem 0 8rem 0;
+  min-height: 70vh;
+}
+
+.tbr-empty-container {
+  background-color: var(--bg-card);
+  padding: 6rem 2.4rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  max-width: 580px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.tbr-empty-icon {
+  color: var(--primary-light);
+  background-color: var(--primary-light);
+  padding: 1.6rem;
+  border-radius: var(--radius-full);
+  color: var(--primary);
+}
+
+.tbr-empty-container h3 {
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  color: var(--text-main);
+}
+
+.tbr-empty-container p {
+  color: var(--text-muted);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.explore-btn {
+  margin-top: 1rem;
+  background-color: var(--primary);
+  color: var(--text-inverse);
+  padding: 1.2rem 2.8rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: var(--transition-fast);
+}
+
+.explore-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}

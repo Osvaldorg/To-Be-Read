@@ -1,0 +1,124 @@
+.sort-filter-bar {
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  padding: 1.4rem 2rem;
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 3.2rem;
+}
+
+.results-count {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.results-count strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.filter-note {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.filter-controls {
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.control-group {
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.control-icon {
+  font-size: 1.4rem;
+  color: var(--text-light);
+  flex-shrink: 0;
+}
+
+.control-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.control-select,
+.control-input {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1rem;
+  font-size: 1.4rem;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.control-select:focus,
+.control-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.control-select {
+  padding-right: 2.4rem;
+  appearance: auto;
+}
+
+.control-input {
+  width: 120px;
+}
+
+.reset-btn {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid rgba(200, 90, 50, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  gap: 0.5rem;
+  transition: var(--transition-fast);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.reset-btn:hover {
+  background-color: var(--primary);
+  color: var(--text-inverse);
+  border-color: var(--primary);
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media screen and (max-width: 700px) {
+  .sort-filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-controls {
+    width: 100%;
+  }
+
+  .control-group {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .control-select,
+  .control-input {
+    flex: 1;
+  }
+
+  .control-input {
+    width: auto;
+  }
+}

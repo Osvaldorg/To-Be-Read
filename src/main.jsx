@@ -1,23 +1,30 @@
-import { StrictMode } from "react";
+import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppProvider } from "./context.jsx";
 import "./index.css";
+import Layout from "./components/Layout/Layout.jsx";
 import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About/About.jsx";
-import BookList from "./components/BookList/BookList.jsx";
 import BookDetails from "./components/BookDetails/BookDetails.jsx";
+import TbrList from "./pages/TbrList/TbrList.jsx";
+
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 
 createRoot(document.getElementById("root")).render(
   <AppProvider>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
-        <Route exact path="/" element={<Home />}>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="book" element={<Home />} />
+          <Route path="book/:id" element={<BookDetails />} />
+          <Route path="tbr" element={<TbrList />} />
           <Route path="about" element={<About />} />
-          <Route path="book" element={<BookList />} />
-          <Route path="/book/:id" element={<BookDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>
   </AppProvider>
 );
+

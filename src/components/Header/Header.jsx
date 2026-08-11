@@ -1,29 +1,32 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 import SearchForm from "../SearchForm/SearchForm";
 import "./Header.css";
+import { FaBookReader } from "react-icons/fa";
 
 function Header() {
   return (
-    <div className="holder">
-      <header className="header">
-        <Navbar />
-        <div className="header-content flex flex-c text-center text-white">
-          <h2 className="header-title text-capitalize">
-            Adentrate a una nueva aventura
-          </h2>
-          <br />
-          <p className="header-text fs-18 fw-3">
-            "Bienvenido a To Be Read, tu espacio ideal para descubrir nuevos
-            libros. Explora nuestra extensa colección, encuentra tus lecturas
-            favoritas, y mantén un seguimiento de los libros que deseas leer.
-            ¡Empecemos tu próxima aventura literaria hoy mismo!"
-          </p>
-          <SearchForm />
+    <header className="hero-header">
+      <div className="hero-overlay"></div>
+      <div className="container hero-content text-center fade-in">
+        <div className="hero-badge flex flex-c">
+          <FaBookReader className="hero-badge-icon" />
+          <span>Descubre & Organiza tus Lecturas</span>
         </div>
-      </header>
-    </div>
+
+        <h1 className="hero-title">
+          Encuentra tu próxima <br />
+          <span className="hero-title-highlight">gran aventura literaria</span>
+        </h1>
+
+        <p className="hero-text">
+          Explora millones de títulos, consulta detalles, y construye tu lista personalizada de libros por leer (TBR) en un solo lugar.
+        </p>
+
+        <SearchForm />
+      </div>
+    </header>
   );
 }
 
 export default Header;
+

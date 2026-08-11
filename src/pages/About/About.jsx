@@ -1,107 +1,63 @@
 import React from "react";
 import "./About.css";
 import aboutImg from "../../images/about-Img.jpg";
-import member from "../../images/team-member-1.jpg";
+import { FaBookOpen, FaHeart, FaGlobe, FaLightbulb } from "react-icons/fa";
 
 function About() {
   return (
-    <section className="about" id="about">
+    <section className="about fade-in" id="about">
       <div className="container">
         <div className="section-title">
-          <h2>Sobre Nosotros</h2>
+          <h2>Sobre To Be Read</h2>
+          <p>Tu espacio personal para explorar, guardar y conectar con la literatura mundial</p>
         </div>
 
         <div className="about-content grid">
-          <div className="about-img">
-            <img src={aboutImg} alt="Nuestro equipo trabajando" />
+          <div className="about-img-container">
+            <img src={aboutImg} alt="Biblioteca y libros" className="about-img" />
           </div>
           <div className="about-text">
             <h3 className="about-title">Nuestra Historia</h3>
             <p>
-              Todo comenzó con una simple pregunta: ¿Cómo podemos marcar la
-              diferencia? Inspirados por nuestra pasión por crear soluciones
-              únicas y significativas, fundamos [Nombre de tu Empresa] en [año].
-              Desde el principio, nuestro objetivo ha sido claro: ofrecer algo
-              más que un producto o servicio, crear experiencias que realmente
-              conecten con las personas. Lo que comenzó como un pequeño equipo
-              con grandes sueños, pronto se convirtió en una comunidad de
-              profesionales dedicados a transformar ideas en realidades. Cada
-              paso en nuestro camino ha estado guiado por la creatividad, el
-              compromiso y la búsqueda constante de excelencia. Hoy, estamos
-              orgullosos de ser reconocidos no solo por lo que hacemos, sino por
-              cómo lo hacemos.
+              <strong>To Be Read</strong> nació como un proyecto impulsado por la pasión hacia los libros y el deseo de simplificar el descubrimiento literario. Inspirados por la infinidad de obras disponibles en el catálogo libre de <em>Open Library</em>, creamos una plataforma intuitiva y elegante diseñada para cualquier lector que busque organizar sus próximas lecturas sin complicaciones.
+            </p>
+            <p>
+              Lo que comenzó como una idea académica para explorar el consumo de APIs web, se ha convertido en un buscador moderno con listas personalizadas TBR (<em>To Be Read</em>), permitiéndote llevar el control de tus lecturas desde cualquier dispositivo.
             </p>
           </div>
         </div>
 
-        <div className="mission-section">
-          <h3 className="section-subtitle">Nuestra Misión</h3>
-          <p>
-            En To Be Read, nuestra misión es crear un espacio donde los amantes
-            de los libros puedan descubrir, compartir y enamorarse de nuevas
-            historias. Queremos:
-          </p>
-          <ul className="values-list">
-            <li>
-              Inspirar la lectura: Ofrecer recomendaciones personalizadas que
-              conecten a cada lector con su próxima gran aventura literaria.
-            </li>
-            <li>
-              Construir comunidad: Ser un lugar donde lectores de todo el mundo
-              puedan intercambiar ideas, reseñas y pasiones.
-            </li>
-            <li>
-              Fomentar el conocimiento: Ampliar horizontes al presentar obras de
-              autores consagrados y voces emergentes.
-            </li>
-            <li>
-              Hacerlo accesible: Simplificar el acceso a los libros mediante
-              herramientas innovadoras, desde rankings hasta bibliotecas
-              personales virtuales.
-            </li>
-          </ul>
-        </div>
+        <div className="features-grid grid">
+          <div className="feature-card">
+            <div className="feature-icon-wrapper">
+              <FaBookOpen size={24} />
+            </div>
+            <h4>Catálogo Abierto</h4>
+            <p>Acceso instantáneo a millones de obras, autores y ediciones mediante Open Library API.</p>
+          </div>
 
-        <div className="values-section">
-          <h3 className="section-subtitle">Nuestros Valores</h3>
-          <ul className="values-list">
-            <li>
-              Innovación: Buscamos constantemente nuevas formas de mejorar y
-              crecer.
-            </li>
-            <li>
-              Integridad: Mantenemos los más altos estándares éticos en todas
-              nuestras operaciones.
-            </li>
-            <li>
-              Colaboración: Creemos en el poder del trabajo en equipo y las
-              asociaciones sólidas.
-            </li>
-            <li>
-              Excelencia: Nos esforzamos por la excelencia en todo lo que
-              hacemos.
-            </li>
-          </ul>
-        </div>
+          <div className="feature-card">
+            <div className="feature-icon-wrapper">
+              <FaHeart size={24} />
+            </div>
+            <h4>Lista TBR Personal</h4>
+            <p>Guarda tus títulos favoritos en tu lista personal con persistencia local automática.</p>
+          </div>
 
-        <div className="team-section">
-          <h3 className="section-subtitle">Nuestro Equipo</h3>
-          <div className="team-grid">
-            <div className="team-member">
-              <img src={member} alt="Nombre del Miembro del Equipo 1" />
-              <h4>Nombre del Miembro</h4>
-              <p>Cargo / Posición</p>
+          <div className="feature-card">
+            <div className="feature-icon-wrapper">
+              <FaLightbulb size={24} />
             </div>
-            <div className="team-member">
-              <img src={member} alt="Nombre del Miembro del Equipo 2" />
-              <h4>Nombre del Miembro</h4>
-              <p>Cargo / Posición</p>
+            <h4>Búsqueda Inteligente</h4>
+            <p>Filtra por categorías sugeridas o busca por cualquier tema, autor o título que desees.</p>
+          </div>
+
+          <div className="feature-card">
+            <div className="feature-icon-wrapper">
+              <FaGlobe size={24} />
             </div>
-            <div className="team-member">
-              <img src={member} alt="Nombre del Miembro del Equipo 3" />
-              <h4>Nombre del Miembro</h4>
-              <p>Cargo / Posición</p>
-            </div>
+            <h4>100% Gratuito y Libre</h4>
+            <p>Una herramienta diseñada sin anuncios ni registros requeridos para tu comodidad.</p>
           </div>
         </div>
       </div>
@@ -110,3 +66,4 @@ function About() {
 }
 
 export default About;
+
