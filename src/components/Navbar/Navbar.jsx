@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useGlobalContext } from "../../context";
 import "./Navbar.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo-icon.png";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { FaBookmark } from "react-icons/fa";
 
@@ -84,7 +84,7 @@ function Navbar() {
   return (
     <nav className="navbar glass-effect" id="navbar">
       <div className="container navbar-container">
-        
+
         {/* Brand / Logo */}
         <Link to="/" className="navbar-brand" onClick={closeMenu}>
           <img src={logo} alt="To Be Read logo" className="brand-logo" />
