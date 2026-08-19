@@ -32,5 +32,5 @@ This project was fundamental in solidifying my understanding of frontend API int
 \```bash
 git clone https://github.com/Osvaldorg/To-Be-Read.git
 npm install
-npm run start
+npm run dev
 \```
